@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: rgb(255,255,255);
+    color: #354f52;
+    font-family: 'Open Sans', sans-serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.MuiDataGrid-columnHeaderTitle{
+    font-weight: 600 !important;
+}
