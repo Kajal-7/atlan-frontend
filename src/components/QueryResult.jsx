@@ -5,7 +5,6 @@ import Table from './ui/Table'
 @description
 The component displays the query result.
 */
-
 const QueryResult = memo(({ queryResult }) => {
   return (
     <div style={{ width: '90%' }}>

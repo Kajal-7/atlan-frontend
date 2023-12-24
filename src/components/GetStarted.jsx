@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 @description
 The landing page of the SQL Editor website that redirects to query dashboard page.
 */
-
 const GetStarted = () => {
 
   return (

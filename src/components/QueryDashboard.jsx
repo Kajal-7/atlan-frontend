@@ -8,7 +8,6 @@ import QueryHandler from './QueryHandler'
 The component renders both query editor and query history section.
 This component also deals with updating the query history list state.
 */
-
 const QueryDashboard = () => {
   const [list, setNewList] = useState([])
 

@@ -6,7 +6,6 @@ import QueryEditor from './QueryEditor'
 @description
 The component fetches the result corresponding to the query from database.
 */
-
 const QueryHandler = memo(({ updateList, list }) => {
   const [queryResult, setQueryResult] = useState()
 

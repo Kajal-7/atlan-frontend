@@ -6,7 +6,6 @@ import CustomAccordian from './ui/CustomAccordian'
 The component renders a an accordian which displays
 the past queries and their result. 
 */
-
 const QueryHistory = memo(({ list, updateList }) => {
 
   const fetchDummyData = async () => {
