@@ -1,0 +1,13 @@
+#searchImg{
+    width: 500px;
+    height: 490px;
+    padding-right: 5px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.mainGrid{
+    padding: 2.2em 0; 
+    background-color: rgb(249,249,249);
+    height: 100%;
+}
