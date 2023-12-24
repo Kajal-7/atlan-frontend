@@ -9,7 +9,7 @@ the past queries and their result.
 const QueryHistory = memo(({ list, updateList }) => {
 
   const fetchDummyData = async () => {
-    const response = await fetch('http://localhost:8080/api/query', {
+    const response = await fetch('https://sql-editor.onrender.com/api/query', {
       method: 'POST',
       body: JSON.stringify({ query: '' }),
       headers: {

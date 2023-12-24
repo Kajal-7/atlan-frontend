@@ -27,7 +27,7 @@ const QueryHandler = memo(({ updateList, list }) => {
 
   const fetchQueryResult = useCallback(async (query) => {  
    
-    const response = await fetch('http://localhost:8080/api/query',{
+    const response = await fetch(' https://sql-editor.onrender.com/api/query',{
       method: 'POST',
       body: JSON.stringify({query}),
       headers:{
