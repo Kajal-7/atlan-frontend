@@ -1,5 +1,6 @@
-import React, { memo , useCallback, useEffect,} from 'react'
+import React, { memo , useCallback, useEffect, useState} from 'react'
 import CustomAccordian from './ui/CustomAccordian'
+import Loader from './ui/Loader'
 
 /*
 @description
@@ -7,7 +8,7 @@ The component renders a an accordian which displays
 the past queries and their result. 
 */
 const QueryHistory = memo(({ list, updateList }) => {
-
+  const [loading, setloading] = useState(false)
   const fetchDummyData = async () => {
     const response = await fetch('https://sql-editor.onrender.com/api/query', {
       method: 'POST',
@@ -30,6 +31,7 @@ const QueryHistory = memo(({ list, updateList }) => {
       return
     }
     let tableNames = ['Orders', 'Customers'] 
+    setloading(true)
     for (let tableName of tableNames){
       fetchDummyData().then((data) => {
         updateList((oldList) => {
@@ -44,9 +46,10 @@ const QueryHistory = memo(({ list, updateList }) => {
           localStorage.setItem('list', JSON.stringify(newList))
           return newList
         })
+        setloading(false)
       })
     }
-
+    
   }, [updateList])
 
   const removeFromList = useCallback(
@@ -60,8 +63,11 @@ const QueryHistory = memo(({ list, updateList }) => {
   )
 
   return (
-    <div style={{ width: '90%' }}>
+    <div style={{ width: '90%', position: "relative"}}>
+      {loading ? <Loader/> :
       <CustomAccordian list={list} removeFromList={removeFromList} />
+      }
+      
     </div>
   )
 })

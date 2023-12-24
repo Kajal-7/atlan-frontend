@@ -7,7 +7,7 @@ The component displays the query result.
 */
 const QueryResult = memo(({ queryResult }) => {
   return (
-    <div style={{ width: '90%' }}>
+    <div style={{ width: '90%'}}>
       {queryResult && (
         <Table rows={queryResult.rows} columns={queryResult.columns} />
       )}
