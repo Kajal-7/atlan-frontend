@@ -1,7 +1,7 @@
 /*
 @description
 The function is used for generating the output data for the query. 
-It pickes a random data file out of the 3 available and convert in appropriate format.
+It pickes a random query data out of the available and convert in appropriate format.
 */
 
 const queryResultGenerator = (queryData) => {
