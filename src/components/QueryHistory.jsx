@@ -29,21 +29,24 @@ const QueryHistory = memo(({ list, updateList }) => {
       updateList(parsedList)
       return
     }
-    fetchDummyData().then((data) => {
-      updateList((oldList) => {
-        const newList = [
-          ...oldList,
-          {
-            title:
-              `SELECT * FROM ` +
-              `${Math.random() > 0.5 ? 'Orders' : 'Customers'}`,
-            content: { rows: data.rows, columns: data.columns },
-          },
-        ]
-        localStorage.setItem('list', JSON.stringify(newList))
-        return newList
+    let tableNames = ['Orders', 'Customers'] 
+    for (let tableName of tableNames){
+      fetchDummyData().then((data) => {
+        updateList((oldList) => {
+          const newList = [
+            ...oldList,
+            {
+              title:
+                `SELECT * FROM ${tableName}` ,
+              content: { rows: data.rows, columns: data.columns },
+            },
+          ]
+          localStorage.setItem('list', JSON.stringify(newList))
+          return newList
+        })
       })
-    })
+    }
+
   }, [updateList])
 
   const removeFromList = useCallback(
