@@ -18,9 +18,7 @@ mongoose.connect(
 
 app.post('/api/query', async (req,res)=>{
     const {query} = req.body
-    console.log(query)
     const allQueryData = await QueryData.find()
-  
     const {rows, columns} = queryResultGenerator(allQueryData)
     res.status(200).json({rows, columns})
 })
