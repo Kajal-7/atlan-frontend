@@ -5,7 +5,7 @@ import { Alert } from '@mui/material'
 
 /*
 @description
-The component allows user to enter a query and also displays it's cooresponding result.
+The component allows user to enter a query and validates it.
 */
 
 const QueryEditor = memo(({onValidationSuccess, list}) => {

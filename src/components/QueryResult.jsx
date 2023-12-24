@@ -3,7 +3,7 @@ import Table from './ui/Table'
 
 /*
 @description
-The component allows user to enter a query and also displays it's cooresponding result.
+The component displays the query result.
 */
 
 const QueryResult = memo(({ queryResult }) => {
