@@ -74,17 +74,21 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
 3. **Form Validation**: Implemented 
    - Need: To make sure user provides some input otherwise show some appropriate error message.
 
-5. **Integrated Backend**: Implemented
+4. **Integrated Backend**: Implemented
    - Need: To provide api driven data for query result.
    - Description: Built Express server to handle query search and respond with the result after interacting with database.
   
-4. **Sortable and Hideable Columns**: Implemented 
+5. **Integrated MongoDB**: Implemented
+   - Need: Better to have data from backend than hard coded dummy data.
+   - Description: Integrated MongoDB using mongoose and seeded it with dummy data so backend can interact with database and respond with query result.
+
+6. **Sortable and Hideable Columns**: Implemented 
    - Need: To allow users to sort the table based on any attribute in ascending or descending order.
    - Need: To provide the ability to hide specific table columns.
    - Status: Implemented
    - Description: Users can sort the table by clicking column headers and hide/unhide columns as needed.
 
-5. **Mobile Responsiveness**: Implemented
+7. **Mobile Responsiveness**: Implemented
    - Need: To ensure the application is designed to work seamlessly on mobile devices.
    - Description: The components are designed to be responsive depending on device type i.e mobile or desktop.
 
