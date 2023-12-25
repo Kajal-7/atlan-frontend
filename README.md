@@ -31,6 +31,8 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
     │   ├── utils                          # It consists of Query Result Generator function which generates result corresponding to the query.
     │   └── server.js                      # It consists of express app and routes.
     └── ...
+
+<img src="./public/layout.png" alt="Layout"></img>
 ## Technologies
 
 * Frontend framework: ReactJs
