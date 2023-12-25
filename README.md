@@ -37,6 +37,8 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
 
 * Frontend framework: ReactJs
 * Other major plugin/packages: Material UI
+* Backend framework: NodeJs, ExpressJs
+* Database: MongoDB
 
 
 ## Features
@@ -71,6 +73,10 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
   
 3. **Form Validation**: Implemented 
    - Need: To make sure user provides some input otherwise show some appropriate error message.
+
+5. **Integrated Backend**: Implemented
+   - Need: To provide api driven data for query result.
+   - Description: Built Express server to handle query search and respond with the result after interacting with database.
   
 4. **Sortable and Hideable Columns**: Implemented 
    - Need: To allow users to sort the table based on any attribute in ascending or descending order.
