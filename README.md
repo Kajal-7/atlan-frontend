@@ -3,7 +3,7 @@
 ## Overview
 SQL Query Viewer is a web application that enables users to effortlessly execute SQL queries and obtain relevant result tables. This project provides a refined yet user-friendly interface, blending essential functions with advanced features to ensure a smooth user experience.
 
-## Demo
+## Deployed Wesite Link
 
 ### Visit the Web application [here](https://symphonious-marzipan-61af8a.netlify.app/).
 
@@ -115,4 +115,4 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
 ### Here's the youtube link for the tutorial [here](#).
 
 ## Contact
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/kajalkaushal/]
+### Linkedin Profile [here](https://www.linkedin.com/in/kajalkaushal/).
