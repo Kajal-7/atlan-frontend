@@ -12,7 +12,7 @@ const QueryDashboard = () => {
   const [list, setNewList] = useState([])
 
   return (
-    <Grid container spacing={2} style={{ padding: '2.2em 0' }}>
+    <Grid container spacing={2} style={{ padding: '2.2em 0'}}>
       <Grid
         item
         lg={6}
