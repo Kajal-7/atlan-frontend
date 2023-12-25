@@ -110,9 +110,5 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
 - Run the server by `npm start` and in backend directory `node server.js`
 ---
 
-## Demo
-
-### Here's the youtube link for the tutorial [here](#).
-
 ## Contact
 ### Linkedin Profile [here](https://www.linkedin.com/in/kajalkaushal/).
