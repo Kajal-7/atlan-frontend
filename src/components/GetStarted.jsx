@@ -32,7 +32,7 @@ const GetStarted = () => {
         item
         lg={6}
         xs={12}
-        style={{ display: 'flex', justifyContent: 'center' }}
+        style={{ display: 'flex', justifyContent: 'center', height: '100%', width: '100%' }}
       >
         <img src='./search.jpg' id={styles.searchImg} alt='#'></img> 
       </Grid>
