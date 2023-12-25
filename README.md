@@ -8,29 +8,29 @@ SQL Query Viewer is a web application that enables users to effortlessly execute
 ### Visit the Web application [here](https://symphonious-marzipan-61af8a.netlify.app/).
 
 ## Project Structure
-
-├── src                             
-│   ├── components                  
-|   |   ├── footer                          
-│   |   ├── header           
-│   |   ├── form           
-│   |   ├── ui           
-|   |   ├── GetStarted.jsx             # This is the landing page of web application SQL Query Viewer.   
-|   |   ├── GetStarted.module.css               
-│   |   ├── QueryDasboard.jsx          # This is the dashboard of query - the parent component to Query Handler, Query History.
-│   |   ├── QueryEditor.jsx            # This ocmponent displys the text area to enter query and validates it and has button to execute query.
-│   |   ├── QueryHandler.jsx           # The parent component to Query Editor, Query Result which make the api call to get query result.
-│   |   ├── QueryHistory.jsx           # This displays the list of queries being searched. You can even remove a query from history.  
-│   |   └── QueryResult.jsx            # This component displays the query result.  
-│   ├── App.js             
-│   ├── App.cs            
-│   ├── index.js           
-│   └── index.css                
-└── backend
-│   ├── models                         # Contains Query Result Schema
-│   ├── utils                          # It consists of Query Result Generator function which generates result corresponding to the query.
-│   └── server.js                      # It consists of express app and routes.
-
+   
+    ├── src                             
+    │   ├── components                  
+    |   |   ├── footer                          
+    │   |   ├── header           
+    │   |   ├── form           
+    │   |   ├── ui           
+    |   |   ├── GetStarted.jsx             # This is the landing page of web application SQL Query Viewer.   
+    |   |   ├── GetStarted.module.css               
+    │   |   ├── QueryDasboard.jsx          # This is the dashboard of query - the parent component to Query Handler, Query History.
+    │   |   ├── QueryEditor.jsx            # This ocmponent displys the text area to enter query and validates it and has button to execute query.
+    │   |   ├── QueryHandler.jsx           # The parent component to Query Editor, Query Result which make the api call to get query result.
+    │   |   ├── QueryHistory.jsx           # This displays the list of queries being searched. You can even remove a query from history.  
+    │   |   └── QueryResult.jsx            # This component displays the query result.  
+    │   ├── App.js             
+    │   ├── App.cs            
+    │   ├── index.js           
+    │   └── index.css                
+    └── backend
+    │   ├── models                         # Contains Query Result Schema
+    │   ├── utils                          # It consists of Query Result Generator function which generates result corresponding to the query.
+    │   └── server.js                      # It consists of express app and routes.
+    └── ...
 ## Technologies
 
 * Frontend framework: ReactJs
